@@ -1,0 +1,250 @@
+"mysql","online_exam","user","email","4","varchar","50","PRIMARY KEY",NULL,NULL,NULL
+"mysql","online_quiz","a1_active_users","id","1","bigint",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","question_id","1","bigint",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","online_quiz","a1_subjects","subject","2","varchar","255","UNIQUE",NULL,NULL,NULL
+"mysql","online_quiz","a1_subjects","subject_id","1","bigint",NULL,"UNIQUE",NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","id","1","bigint",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","online_quiz","a1_users","ID","1","bigint",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","online_quiz","a1_users","emailID","3","varchar","255","UNIQUE",NULL,NULL,NULL
+"mysql","onlineexaminationportal","admin","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","sub_id","9","varchar","10","FOREIGN KEY","onlineexaminationportal","subject","sub_id"
+"mysql","onlineexaminationportal","examiner","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","onlineexaminationportal","examiner","sub_id","5","varchar","10","FOREIGN KEY","onlineexaminationportal","subject","sub_id"
+"mysql","onlineexaminationportal","question","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","sub_id","10","varchar","10","FOREIGN KEY","onlineexaminationportal","subject","sub_id"
+"mysql","onlineexaminationportal","question","examiner_id","9","int",NULL,"FOREIGN KEY","onlineexaminationportal","examiner","id"
+"mysql","onlineexaminationportal","result","sub_id","2","varchar","10","FOREIGN KEY","onlineexaminationportal","subject","sub_id"
+"mysql","onlineexaminationportal","result","examinee_id","1","int",NULL,"FOREIGN KEY","onlineexaminationportal","examinee","id"
+"mysql","onlineexaminationportal","subject","sub_id","1","varchar","10","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__bookmark","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","db_name","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_name","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","db_name","2","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","table_name","3","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","column_name","4","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__designer_settings","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__export_templates","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__export_templates","username","2","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__export_templates","export_type","3","varchar","10","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__export_templates","template_name","4","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__favorite","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__history","id","1","bigint",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__navigationhiding","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__navigationhiding","item_name","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__navigationhiding","item_type","3","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__navigationhiding","db_name","4","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__navigationhiding","table_name","5","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__pdf_pages","page_nr","2","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__recent","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__relation","master_db","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__relation","master_table","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__relation","master_field","3","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__savedsearches","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__savedsearches","username","2","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__savedsearches","db_name","3","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__savedsearches","search_name","4","varchar","64","UNIQUE",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_coords","db_name","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_coords","table_name","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_coords","pdf_page_number","3","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_info","db_name","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_info","table_name","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_uiprefs","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_uiprefs","db_name","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_uiprefs","table_name","3","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","db_name","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","table_name","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","version","3","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__userconfig","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__usergroups","usergroup","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__usergroups","tab","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__usergroups","allowed","3","enum","1","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__users","username","1","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","phpmyadmin","pma__users","usergroup","2","varchar","64","PRIMARY KEY",NULL,NULL,NULL
+"mysql","quiz_db","feedback","login","1","varchar","15","UNIQUE",NULL,NULL,NULL
+"mysql","quiz_db","mst_admin","id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","quiz_db","mst_question","que_id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","quiz_db","mst_result","id","5","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","quiz_db","mst_subject","sub_id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","quiz_db","mst_test","test_id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","quiz_db","mst_user","user_id","1","int",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"mysql","dispensary","patient","PatientID","1","varchar","10",NULL,NULL,NULL,NULL
+"mysql","dispensary","patient","name","2","varchar","50",NULL,NULL,NULL,NULL
+"mysql","dispensary","patient","bloodgroup","3","varchar","2",NULL,NULL,NULL,NULL
+"mysql","dispensary","patient","birthdate","4","date",NULL,NULL,NULL,NULL,NULL
+"mysql","dispensary","patient","address","5","varchar","150",NULL,NULL,NULL,NULL
+"mysql","dispensary","patient","mobile","6","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","admin","email","1","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","admin","password","2","varchar","500",NULL,NULL,NULL,NULL
+"mysql","online_exam","answer","qid","1","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","answer","ansid","2","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","id","1","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","name","2","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","email","3","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","subject","4","varchar","500",NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","feedback","5","varchar","500",NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","date","6","date",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","feedback","time","7","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","history","email","1","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","history","eid","2","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","history","score","3","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","history","level","4","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","history","sahi","5","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","history","wrong","6","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","history","date","7","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","options","qid","1","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","options","option","2","varchar","5000",NULL,NULL,NULL,NULL
+"mysql","online_exam","options","optionid","3","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","questions","eid","1","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","questions","qid","2","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","questions","qns","3","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","questions","choice","4","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","questions","sn","5","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","eid","1","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","title","2","varchar","100",NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","sahi","3","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","wrong","4","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","total","5","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","time","6","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","intro","7","text","65535",NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","tag","8","varchar","100",NULL,NULL,NULL,NULL
+"mysql","online_exam","quiz","date","9","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","rank","email","1","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","rank","score","2","int",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","rank","time","3","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","user","name","1","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_exam","user","gender","2","varchar","5",NULL,NULL,NULL,NULL
+"mysql","online_exam","user","college","3","varchar","100",NULL,NULL,NULL,NULL
+"mysql","online_exam","user","mob","5","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_exam","user","password","6","varchar","50",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_active_users","user_id","2","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_active_users","session_id","3","varchar","255",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_active_users","expires","4","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_active_users","updated_Timestamp","5","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","subject_id","2","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","question","3","varchar","4000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","opt1","4","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","opt2","5","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","opt3","6","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","opt4","7","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","correct_answer","8","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","inserted_timestamp","9","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_question_bank","user_id","10","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_subjects","inserted_timestamp","3","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_subjects","user_id","4","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","user_id","2","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","quiz_id","3","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","question_id","4","bigint",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","user_answer","5","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","correct_answer","6","varchar","1000",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_user_answers","inserted_timestamp","7","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_users","name","2","varchar","255",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_users","hashpass","4","varchar","255",NULL,NULL,NULL,NULL
+"mysql","online_quiz","a1_users","inserted_timestamp","5","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","admin","email","2","varchar","100",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","admin","password","3","varchar","200",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","admin","first_name","4","varchar","50",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","admin","last_name","5","varchar","50",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","email","2","varchar","100",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","password","3","varchar","200",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","reg_no","4","varchar","10",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","first_name","5","varchar","50",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","last_name","6","varchar","50",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","max_marks","7","int",NULL,NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examinee","marks_obtained","8","int",NULL,NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examiner","reg_no","2","varchar","10",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examiner","first_name","3","varchar","50",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examiner","last_name","4","varchar","50",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","examiner","password","6","varchar","200",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","text_question","2","varchar","2000",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","op_a","3","varchar","500",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","op_b","4","varchar","500",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","op_c","5","varchar","500",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","op_d","6","varchar","500",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","img_question","7","blob","65535",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","question","correct_op","8","varchar","1",NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","result","max_marks","3","int",NULL,NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","result","marks_obtained","4","int",NULL,NULL,NULL,NULL,NULL
+"mysql","onlineexaminationportal","subject","sub_name","2","varchar","60",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__bookmark","dbase","2","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__bookmark","user","3","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__bookmark","label","4","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__bookmark","query","5","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_type","3","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_length","4","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_collation","5","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_isNull","6","tinyint",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_extra","7","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__central_columns","col_default","8","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","comment","5","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","mimetype","6","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","transformation","7","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","transformation_options","8","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","input_transformation","9","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__column_info","input_transformation_options","10","varchar","255",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__designer_settings","settings_data","2","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__export_templates","template_data","5","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__favorite","tables","2","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__history","username","2","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__history","db","3","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__history","table","4","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__history","timevalue","5","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__history","sqlquery","6","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__pdf_pages","db_name","1","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__pdf_pages","page_descr","3","varchar","50",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__recent","tables","2","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__relation","foreign_db","4","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__relation","foreign_table","5","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__relation","foreign_field","6","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__savedsearches","search_data","5","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_coords","x","4","float",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_coords","y","5","float",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_info","display_field","3","varchar","64",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_uiprefs","prefs","4","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__table_uiprefs","last_update","5","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","date_created","4","datetime",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","date_updated","5","datetime",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","schema_snapshot","6","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","schema_sql","7","text","65535",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","data_sql","8","longtext","4294967295",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","tracking","9","set","188",NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__tracking","tracking_active","10","int",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__userconfig","timevalue","2","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","phpmyadmin","pma__userconfig","config_data","3","text","65535",NULL,NULL,NULL,NULL
+"mysql","quiz_db","feedback","feedback1","2","varchar","100",NULL,NULL,NULL,NULL
+"mysql","quiz_db","feedback","date","3","timestamp",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_admin","loginid","2","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_admin","pass","3","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","test_id","2","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","que_desc","3","varchar","150",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","ans1","4","varchar","75",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","ans2","5","varchar","75",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","ans3","6","varchar","75",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","ans4","7","varchar","75",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_question","true_ans","8","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_result","login","1","varchar","20",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_result","test_id","2","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_result","test_date","3","date",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_result","score","4","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_subject","sub_name","2","varchar","25",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_test","sub_id","2","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_test","test_name","3","varchar","30",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_test","total_que","4","varchar","15",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","login","2","varchar","20",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","pass","3","varchar","20",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","username","4","varchar","30",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","address","5","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","city","6","varchar","15",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","phone","7","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","email","8","varchar","30",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_user","image","9","blob","65535",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","sess_id","1","varchar","80",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","test_id","2","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","que_des","3","varchar","200",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","ans1","4","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","ans2","5","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","ans3","6","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","ans4","7","varchar","50",NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","true_ans","8","int",NULL,NULL,NULL,NULL,NULL
+"mysql","quiz_db","mst_useranswer","your_ans","9","int",NULL,NULL,NULL,NULL,NULL
